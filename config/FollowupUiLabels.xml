@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ofbiz.apache.org/dtds/ofbiz-properties.xsd">
+    <property key="Dashboard">
+        <value xml:lang="en">Dashboard</value>
+        <value xml:lang="fr">Tableau de bord</value>
+    </property>
+    <property key="FO_Delayed">
+        <value xml:lang="en">FO Delayed</value>
+        <value xml:lang="fr">OF en retard</value>
+    </property>
+    <property key="FO_InProduction">
+        <value xml:lang="en">FO in production</value>
+        <value xml:lang="fr">OF en production</value>
+    </property>
+    <property key="FO_Ready">
+        <value xml:lang="en">FO ready</value>
+        <value xml:lang="fr">OF prêt</value>
+    </property>
     <property key="Followup">
         <value xml:lang="en">Follow Up</value>
         <value xml:lang="fr">Suivi de production</value>
@@ -23,6 +39,7 @@
     </property>
     <property key="FollowupCompanySubtitle">
         <value xml:lang="en">Part of the Open For Business Family of Open Source Software</value>
+        <value xml:lang="fr">Module complémentaire du logiciel Open Source "Open For Business"</value>
         <value xml:lang="it">Un modulo della famiglia di software open source Open For Business</value>
         <value xml:lang="zh">开源软件OFBiz的组成部分</value>
     </property>
@@ -58,16 +75,16 @@
         <value xml:lang="en">Follow Up with Portlet</value>
         <value xml:lang="fr">Suivi de production par Portlet</value>
     </property>
-    <property key="FollowupProdRunId">
-        <value xml:lang="en">Prod run Id</value>
+    <property key="FollowupFabOrderId">
+        <value xml:lang="en">Fab Order Id</value>
         <value xml:lang="fr">Ref de l'OF</value>
     </property>
-    <property key="FollowupProdRunName">
-        <value xml:lang="en">Prod run name</value>
+    <property key="FollowupFabOrderName">
+        <value xml:lang="en">Fab order name</value>
         <value xml:lang="fr">Nom de l'OF</value>
     </property>
-    <property key="FollowupProductionRuns">
-        <value xml:lang="en">Production Runs</value>
+    <property key="FollowupFabricationOrders">
+        <value xml:lang="en">Fabrication orders</value>
         <value xml:lang="fr">Ordres de fabrication</value>
     </property>
     <property key="FollowupQuantityProduced">
@@ -90,12 +107,12 @@
         <value xml:lang="en">Follow Up with Screen</value>
         <value xml:lang="fr">Suivi de production par Screens</value>
     </property>
-    <property key="FollowupSeeProductionRun">
-        <value xml:lang="en">See Production Run</value>
+    <property key="FollowupSeeFabricationOrder">
+        <value xml:lang="en">See Fabrication Order</value>
         <value xml:lang="fr">Voir l'Ordre de Fabrication</value>
     </property>
-    <property key="FollowupSelectProductionRun">
-        <value xml:lang="en">Select Production Run</value>
+    <property key="FollowupSelectFabricationOrder">
+        <value xml:lang="en">Select Fabrication Order</value>
         <value xml:lang="fr">Sélection de l'Ordre de Fabrication</value>
     </property>
     <property key="FollowupStatus">
@@ -114,7 +131,7 @@
         <value xml:lang="en">Task Id</value>
         <value xml:lang="fr">Ref de la tâche</value>
     </property>
-    <property key="FollowupTaskListInProdRun">
+    <property key="FollowupTaskListInFabOrder">
         <value xml:lang="en">Tasks list</value>
         <value xml:lang="fr">Liste des tâches</value>
     </property>
@@ -143,6 +160,10 @@
         <value xml:lang="fr">Vous n'êtes pas autorisé à visualiser cette page.</value>
         <value xml:lang="zh">不允许你浏览这个页面。</value>
     </property>
+    <property key="More">
+        <value xml:lang="en">More...</value>
+        <value xml:lang="fr">Plus...</value>
+    </property>
     <property key="PageTitleFollowupProdTask">
         <value xml:lang="en">Follow-up of Task</value>
         <value xml:lang="fr">Suivi de l'opération</value>
@@ -151,12 +172,13 @@
         <value xml:lang="en">List of production tasks</value>
         <value xml:lang="fr">Liste des opérations de production</value>
     </property>
-    <property key="PageTitleProdRunDetailsMenu">
-        <value xml:lang="en">Production Run information</value>
+    <property key="PageTitleFabOrderDetailsMenu">
+        <value xml:lang="en">Fabrication Order information</value>
         <value xml:lang="fr">Information sur l'Ordre de Fabrication</value>
     </property>
-    <property key="PageTitleSelectProdRun">
-        <value xml:lang="en">Select Production Run</value>
+    <property key="PageTitleSelectFabOrder">
+        <value xml:lang="en">Select Fabrication Order</value>
         <value xml:lang="fr">Sélection de l'Ordre de Fabrication</value>
     </property>
+    
 </resource>

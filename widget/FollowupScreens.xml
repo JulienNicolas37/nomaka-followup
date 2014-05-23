@@ -27,18 +27,18 @@
                 <include-screen name="GlobalActions" location="component://common/widget/CommonScreens.xml" />
                 <platform-specific>
                     <html>
-                        <html-template location="component://followup/webapp/followup/includes/header.ftl" />
+                        <html-template location="component://followup/webapp/followup/includes/followup/header.ftl" />
                     </html>
                 </platform-specific>
                 <platform-specific>
                     <html>
-                        <html-template location="component://followup/webapp/followup/includes/messages.ftl" />
+                        <html-template location="component://followup/webapp/followup/includes/followup/messages.ftl" />
                     </html>
                 </platform-specific>
                 <decorator-section-include name="body" />
                 <platform-specific>
                     <html>
-                        <html-template location="component://followup/webapp/followup/includes/footer.ftl" />
+                        <html-template location="component://followup/webapp/followup/includes/followup/footer.ftl" />
                     </html>
                 </platform-specific>
             </widgets>
@@ -79,16 +79,16 @@
         </section>
     </screen>
 
-    <screen name="FollowupProductionRunScreen">
+<screen name="FollowupFabricationOrderScreen">
         <section>
             <actions>
-                <set field="titleProperty" value="FollowupSelectProductionRun"/>
+                <set field="titleProperty" value="FollowupSelectFabricationOrder"/>
                 <set field="viewIndex" from-field="parameters.VIEW_INDEX" type="Integer"/>
                 <set field="viewSize" from-field="parameters.VIEW_SIZE" type="Integer" default-value="50"/>
                 
-                <script location="component://followup/webapp/followup/WEB-INF/actions/LoadAvailableProductionRunAndTasks.groovy"/>
+                <script location="component://followup/webapp/followup/WEB-INF/actions/LoadAvailableFabricationOrderAndTasks.groovy"/>
     
-                <set field="layoutSettings.styleSheets[]" value="/followup/css/style.css" global="true"/>
+                <set field="layoutSettings.styleSheets[]" value="/followup/css/followup/style.css" global="true"/>
                 <!--the above line is used to access the newly added style.css inside the css folder-->
 
                 <set field="layoutSettings.javaScripts []" value="/followup/js/libs/jquery-1.8.0.min.js" global="true"/>
@@ -98,8 +98,8 @@
                 <set field="layoutSettings.javaScripts []" value="/followup/js/libs/fastclick.js" global="true"/>
                 <set field="layoutSettings.javaScripts []" value="/followup/js/libs/tweens/TweenMax.min.js" global="true"/>
                 <set field="layoutSettings.javaScripts []" value="/followup/js/libs/tweens/utils/Draggable.min.js" global="true"/>
-                <set field="layoutSettings.javaScripts []" value="/followup/js/script.js" global="true"/>
-                <set field="layoutSettings.javaScripts []" value="/followup/js/updateStatus.js" global="true"/>
+                <set field="layoutSettings.javaScripts []" value="/followup/js/followup/script.js" global="true"/>
+                <set field="layoutSettings.javaScripts []" value="/followup/js/followup/updateStatus.js" global="true"/>
                 <!--the above line is used to access the newly added myjavascript.js inside the js folder-->
     
             </actions>
@@ -111,6 +111,6 @@
                 </decorator-screen>
             </widgets>
         </section>
-    </screen>
-
+</screen>
+    
 </screens>
